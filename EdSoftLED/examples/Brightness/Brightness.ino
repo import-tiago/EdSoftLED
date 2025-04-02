@@ -4,9 +4,9 @@
 
 #include "EdSoftLED.h"
 const byte LED_PIN   = D5;   // = GPIO 8;                     // Pin number LEDs are connected to
-const byte NUM_LEDS  = 24;                                    // How many leds in  strip?
+const int NUM_LEDS   = 16;                                    // How many leds in  strip?
 
-EdSoftLED LED(NUM_LEDS, LED_PIN, WS2812RGB);                  // EdSoft_SK6812LED(NUM_LEDS, LED_PIN);  
+EdSoftLED LED(NUM_LEDS, LED_PIN, WS2812RGB);                  // EdSoftLED LED(NUM_LEDS, LED_PIN, SK6812WRGB);;  
 
 //------------------------------------------------------------------------------
 //  Setup

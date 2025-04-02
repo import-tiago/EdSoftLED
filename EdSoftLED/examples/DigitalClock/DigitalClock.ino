@@ -9,7 +9,7 @@
 
 
 #include <EdSoftLED.h>
-#include <TimeLib.h>                               // Arduino standard library Time or  https://github.com/PaulStoffregen/Time 
+#include <TimeLib.h>                               // Arduino standard Time library Time or  https://github.com/PaulStoffregen/Time 
 #include <Wire.h>                                  // Arduino standard library
 #include "RTClib.h"                                // Arduino standard library or https://github.com/adafruit/RTClib 
  
@@ -19,8 +19,8 @@ const int NUM_LEDS       = 256;                    // How many leds in  strip?
 const byte MATRIX_WIDTH  = 16;                     // Width in pixels of the LED strips
 const byte MATRIX_HEIGHT = 16;                     // Height in pixels of the LED strips
 const byte BRIGHTNESS    = 32;                     // BRIGHTNESS 0 - 255
-const uint32_t white     = 0x00FFFFFF;    // 0xFF000000;
-EdSoftLED LED(NUM_LEDS, LED_PIN, WS2812RGB);       // EdSoft_SK6812LED(NUM_LEDS, LED_PIN);  
+const uint32_t white     = 0x00FFFFFF;             // or with SK6812 LEDs: 0xFF000000;
+EdSoftLED LED(NUM_LEDS, LED_PIN, WS2812RGB);       //  EdSoftLED LED(NUM_LEDS, LED_PIN, SK6812WRGB);
 
 RTC_DS3231 RTCklok;
 DateTime Inow;
