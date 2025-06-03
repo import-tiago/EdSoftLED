@@ -10,7 +10,7 @@ EdSoftLED::EdSoftLED(uint16_t num_leds, const uint8_t pin, uint8_t LEDtype)
 	_pixels     = new RGBW[_count_led];   
 	_Orgpixels  = new RGBW[_count_led];
 	_LEDdata    = new rmt_data_t[32 * _count_led] ;
- 	
+	
 	
   if (!rmtInit(_pin_number, RMT_TX_MODE, RMT_MEM_NUM_BLOCKS_1, 10000000)) 
   {
@@ -33,8 +33,8 @@ EdSoftLED::~EdSoftLED()
 	delete [] _pixels;
 	delete [] _Orgpixels;
 	delete [] _LEDdata;
-//	pinMode(_pin_number, INPUT);
- //  rmt_driver_uninstall( skconfig.channel );	
+	pinMode(_pin_number, INPUT);
+   //rmt_driver_uninstall( skconfig.channel );	
 }
 
 //--------------------------------------------
@@ -42,8 +42,8 @@ EdSoftLED::~EdSoftLED()
 //--------------------------------------------
 void EdSoftLED::begin(void)
 {
- //pinMode(_pin_number, OUTPUT);
- //digitalWrite(_pin_number, LOW);
+ pinMode(_pin_number, OUTPUT);
+ digitalWrite(_pin_number, LOW);
 }
 
 

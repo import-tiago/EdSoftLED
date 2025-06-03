@@ -1,4 +1,4 @@
-# EdSoftLED V1.0.2
+# EdSoftLED V1.0.1
 Arduino library for SK6812 based 4-channel RGBW and WS2812 based 3-channel RGB LEDs.
 
 
