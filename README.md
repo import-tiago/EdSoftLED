@@ -29,7 +29,7 @@ For example:
 #endif
 ```
 
-# EdSoftLED V1.0.2
+# EdSoftLED V1.3.0
 Arduino library for SK6812 based 4-channel RGBW and WS2812 based 3-channel RGB LEDs.
 
 ```
