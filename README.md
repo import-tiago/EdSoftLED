@@ -4,6 +4,9 @@ Library for WS2812 and SK6812 LEDstrips with core ESP32 V3.x.x.
 It is tested with an Arduino Nano ESP32 but will probably also work with other ESP32 boards.
 
 Compiling with the Adafruit Neopixel library with an Arduino Nano ESP32 works fine when the board Arduino Nano ESP32 core version 2.0.13 from Arduino is used. 
+Nb (3jun2025) After ESP32 Core 3.2.0 the Adafruit Neopixel can be used again. The library examples only work with an ESP32-c3 when the compiler debug level is set to everything but 'None'. 
+In the Examples there are two very basic examples to drive a WS2812 and a SK6812 LED-strip. 
+
 
 This library can be used for ESP32 core version 3.0 or higher from Espressif.
 https://docs.espressif.com/projects/arduino-esp32/en/latest/api/rmt.html
