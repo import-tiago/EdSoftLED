@@ -1,14 +1,14 @@
 # EdSoftLED
 Library for WS2812 and SK6812 LEDstrips with core ESP32 V3.x.x.
 
-It is tested with an Arduino Nano ESP32 but will probably also work with other ESP32 boards.
+It is tested with an Arduino Nano ESP32 and a ESP32-S3-WROOM-DevKitC-1 but it will probably also work with other ESP32 boards.
 
 Compiling with the Adafruit Neopixel library with an Arduino Nano ESP32 works fine when the board Arduino Nano ESP32 core version 2.0.13 from Arduino is used. 
 
-Nb (3jun2025) After ESP32 Core 3.2.0 the Adafruit Neopixel can be used again. The library examples only work with an ESP32-c3 when the compiler debug level is set to everything but 'None'. 
+NB (3jun2025) On ESP32 Core 3.2.0 the Adafruit Neopixel can be used again. 
+But his library also still work fine. 
 
 In the Examples there are two very basic examples to drive a WS2812 and a SK6812 LED-strip. 
-
 
 This library can be used for ESP32 core version 3.0 or higher from Espressif.
 https://docs.espressif.com/projects/arduino-esp32/en/latest/api/rmt.html
@@ -66,15 +66,21 @@ static uint32_t Color(uint8_t r, uint8_t g, uint8_t b, uint8_t w)
 3. Include the library in your project using "#include <EdSoftLED.h>" directive
 
 Select board: ESP32 -> Arduino Nano ESP32 (almost at the bottom of a long list)
-In the examples the LED strip is connected to pin D5 (= GPIO8)
-If the LEDs do not turn on change LED_PIN D5 in 8.
+In the examples the LED strip is connected to pin 8 (= GPIO8).
+
+## How to compile: 
+Install ESP32 boards<br>
+Board: Arduino Nano ESP32 core version 2.0.17 or ESP32 core version 3.2.1 <br>
+Partition Scheme: With FAT<br>
+Pin Numbering: By GPIO number (legacy). Not 'By Arduino pin (default)'<br>
+
 Initialize with LED type  SK6812WRGB or WS2812RGB.
 If the colours do not match change the 0xWWRRGGBB sequence in your program.
 
 ## Example
 ```
 #include <EdSoftLED.h>
-EdSoftLED LED(4, D5, SK6812WRGB);         // EdSoftLED LED(NUM_LEDS, LED_PIN, LED_type); // WS2812RGB
+EdSoftLED LED(4, 8, SK6812WRGB);         // EdSoftLED LED(NUM_LEDS, LED_PIN, LED_type); // WS2812RGB
 uint32_t color1 = 0X000000FF;             // 0xWWRRGGBB  
 
 void setup() 
