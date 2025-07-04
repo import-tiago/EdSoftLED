@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------
 
 #include "EdSoftLED.h"
-const byte LED_PIN   = 4;                                     // Pin number LEDs are connected to
+const byte LED_PIN   = 8;                                     // Pin number LEDs are connected to
 const byte NUM_LEDS  = 24;                                    // How many leds in  strip?
 
 EdSoftLED LED(NUM_LEDS, LED_PIN, WS2812RGB);                  //  

@@ -14,7 +14,7 @@
 #include "RTClib.h"                                // Arduino standard library or https://github.com/adafruit/RTClib 
  
 
-const byte LED_PIN       = D5;                     // = GPIO pin 8.  Pin where the LED strip is attached to
+const byte LED_PIN       = 8;                     // = GPIO pin 8.  Pin where the LED strip is attached to
 const int NUM_LEDS       = 256;                    // How many leds in  strip?
 const byte MATRIX_WIDTH  = 16;                     // Width in pixels of the LED strips
 const byte MATRIX_HEIGHT = 16;                     // Height in pixels of the LED strips

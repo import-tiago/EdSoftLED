@@ -1,7 +1,10 @@
 #include "EdSoftLED.h"
 
-EdSoftLED LED(4, 4, WS2812RGB);            // D5 = GPIO-pin 8
-//EdSoftLED LED(4, 4, SK6812RGB); 
+const byte LED_PIN   = 8;                                     // Pin number LEDs are connected to
+const byte NUM_LEDS  = 24;                                    // How many leds in  strip?
+
+EdSoftLED LED(NUM_LEDS, LED_PIN, WS2812RGB);                  //  
+//EdSoftLED LED(NUM_LEDS, LED_PIN, SK6812WRGB); 
 
 uint32_t color1 = 0X00000044;             // 0xWWRRGGBB . 44 is aproximately a brighness of 25%
 

@@ -1,7 +1,7 @@
 #include "EdSoftLED.h"
 
-EdSoftLED LEDsk = EdSoftLED(14, D5, SK6812WRGB);                  // EdSoftLEDLED(NUM_LEDS, LED_PIN);
-EdSoftLED LEDws = EdSoftLED(14, D5, WS2812RGB);
+EdSoftLED LEDsk = EdSoftLED(14, 8, SK6812WRGB);                  // EdSoftLEDLED(NUM_LEDS, LED_PIN);
+EdSoftLED LEDws = EdSoftLED(14, 8, WS2812RGB);
 EdSoftLED LED   = EdSoftLED();  
 
 uint32_t color1 = 0X0A0A0A00;             // 0xWWRRGGBB  
