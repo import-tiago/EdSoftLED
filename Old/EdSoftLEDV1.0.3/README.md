@@ -1,4 +1,4 @@
-# EdSoftLED V1.4.0
+# EdSoftLED V1.0.2
 Arduino library for SK6812 based 4-channel RGBW and WS2812 based 3-channel RGB LEDs.
 
 
@@ -22,15 +22,13 @@ uint32_t makeRGBWcolor( uint32_t Red, uint32_t Green, uint32_t Blue, uint32_t Wh
 2. In Arduino IDE: Sketch -> Include Library -> Add .ZIP Library
 3. Include the library in your project using "#include <EdSoftLED.h>" directive
 
-Initialize with LED type  SK6812WRGB, SK6812WGRB, WS2812RGB or WS2812GRB to match the colour sequence of the LEDs used.
-
+Initialize with LED type  SK6812WRGB or WS2812RGB.
 If the colours do not match change the 0xWWRRGGBB sequence in your program.
 
 ## Example
 ```
 #include <EdSoftLED.h>
 EdSoftLED LED(4, 5, SK6812WRGB);          // EdSoftLED LED(NUM_LEDS, LED_PIN, LED_type); // WS2812RGB
-// EdSoftLED LED(4, 5, WS2812RGB);        // if WS2812 LEDs are used
 uint32_t color1 = 0X000000FF;             // 0xWWRRGGBB  
 
 void setup() 

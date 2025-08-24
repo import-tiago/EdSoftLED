@@ -23,6 +23,8 @@ getwhite        KEYWORD2
 getred          KEYWORD2
 getgreen        KEYWORD2
 getblue         KEYWORD2
+
+
 #getBrightness	KEYWORD2
 #getPin		KEYWORD2
 #numPixels	KEYWORD2
