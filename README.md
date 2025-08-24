@@ -34,7 +34,7 @@ For example:
 #endif
 ```
 
-# EdSoftLED V1.3.0
+# EdSoftLED V1.4.1
 Arduino library for SK6812 based 4-channel RGBW and WS2812 based 3-channel RGB LEDs.
 
 ```
@@ -74,8 +74,7 @@ Board: Arduino Nano ESP32 core version 2.0.17 or ESP32 core version 3.2.1 <br>
 Partition Scheme: With FAT<br>
 Pin Numbering: By GPIO number (legacy). Not 'By Arduino pin (default)'<br>
 
-Initialize with LED type  SK6812WRGB or WS2812RGB.
-If the colours do not match change the 0xWWRRGGBB sequence in your program.
+Initialize with LED type  SK6812WRGB, SK6812WGRB, WS2812RGB or WS2812GRB to match your colour sequence.
 
 ## Example
 ```
